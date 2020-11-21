@@ -1,0 +1,1988 @@
+commit 0522e2d77e3ab82d3b80a5be8dbbdc8d4180561c
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Aug 3 11:29:50 2019 +0900
+
+    Compile an integer to an exectuable that exits with the given number
+
+commit bf7081fba7d8c6b1cd8a12eb329697a5481c604e
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Aug 3 12:20:08 2019 +0900
+
+    Add + and - operators
+
+commit a1ab0ff26f23c82f15180051204eeb6279747c9a
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Aug 3 12:36:06 2019 +0900
+
+    Add a tokenizer to allow space characters between tokens
+
+commit cc5a6d978144bda90220bd10866c4fd908d07546
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Aug 3 15:02:08 2019 +0900
+
+    Improve error message
+    
+    Now, chibicc can print out an error message with an error location
+    like this:
+    
+      $ ./chibicc 1+foo
+      1+foo
+        ^ expected a number
+
+commit 84cfcaf98f3d19c8f0f316e22a61725ad201f0f6
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Aug 3 15:36:43 2019 +0900
+
+    Add *, / and ()
+
+commit bf9ab52860c1cbbeeca40df515468f42300ff429
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Aug 3 15:41:40 2019 +0900
+
+    Add unary plus and minus
+
+commit 25b4b85b887c643e337a9fbcd1b0220b413952bf
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Aug 3 16:15:23 2019 +0900
+
+    Add ==, !=, <= and >= operators
+
+commit 725badfb494544b7c7f1d4c4690b9bc033c6d051
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Oct 7 20:11:16 2020 +0900
+
+    Split main.c into multiple small files
+
+commit 76cae0ad05b6ba3e3e927b2b749ccddda23f0c51
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Sep 26 08:50:44 2020 +0900
+
+    Accept multiple statements separated by semicolons
+
+commit 1f9f3adf324af1432a380b41c7690834e649e346
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Sep 26 08:59:56 2020 +0900
+
+    Support single-letter local variables
+
+commit 482c26b536f8e5c998af6210470cd3d97a47ee9a
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Oct 7 20:12:19 2020 +0900
+
+    Support multi-letter local variables
+
+commit 6cc1c1f0643ce0f1af0857e024a0a438ddb45853
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Oct 7 20:12:57 2020 +0900
+
+    Add "return" statement
+
+commit 18ac283a5d19c19f1e1a7020a50fe34c2160a0f8
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 4 13:38:41 2020 +0900
+
+    Add { ... }
+
+commit ff8912c68e877744f8b15070e098af786e7bd296
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu May 14 11:05:01 2020 +0900
+
+    Add null statement
+
+commit 72b841508f562c65b427a502fe6b270c3717319b
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Oct 7 12:47:09 2020 +0900
+
+    Add "if" statement
+
+commit f5d480f139592cc2670c2b05076c39b2fd6fe9b3
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 4 17:35:53 2019 +0900
+
+    Add "for" statement
+
+commit 1f3eb34f637520b01e6b8cd10a9026d05036db6d
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 4 17:24:03 2019 +0900
+
+    Add "while" statement
+
+commit 5b142b1dcf6561df3c44a743965af3bd4e619112
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 4 18:07:31 2019 +0900
+
+    Add LICENSE and README.md
+
+commit 3d8627719be00e39070eaca0ee5b599f2a877c5c
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Sep 26 11:23:04 2020 +0900
+
+    Add a representative node to each Node to improve error messages
+
+commit 863e2b8de25fdf43a4a63b93d0f57718e9edaa47
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Mon Aug 5 21:12:44 2019 +0900
+
+    Add unary & and *
+
+commit a6bc4ab101c20b6398fd6bbfe124665bb7db5d25
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 4 13:39:06 2020 +0900
+
+    Make pointer arithmetic work
+
+commit b4e82cf7ce1cbfff8dd30f20fdad73fd3f1d5ccb
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Sep 3 15:43:36 2020 +0900
+
+    Add keyword "int" and make variable definition mandatory
+
+commit 30a39926272a8341c52018654ca18d2c86ba662b
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 4 18:25:20 2019 +0900
+
+    Support zero-arity function calls
+
+commit 964b1d2a0e3e46882743f16703cb12b51e724179
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 4 19:03:46 2019 +0900
+
+    Support function call with up to 6 arguments
+
+commit 6cb4220f339e7d2a894e44b61c90c576a482914b
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 4 19:01:33 2020 +0900
+
+    Support zero-arity function definition
+
+commit aacc0cfec24e0aef1e884ac8b657e182a33a7b1c
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 4 13:39:48 2020 +0900
+
+    Support function definition up to 6 parameters
+
+commit 8b6395d0f2be4024bd7e7921157a6496951eb162
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Sep 26 10:15:32 2020 +0900
+
+    Add one dimensional arrays
+
+commit 3ce1b2d067164f754dcb4216c193dc98e164b3ce
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Mon Aug 5 23:56:37 2019 +0900
+
+    Add arrays of arrays
+
+commit 648646bba704745274fcd4fef3b7029c7f7e0fcd
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Aug 6 18:14:53 2019 +0900
+
+    Add [] operator
+
+commit 3e55cafef80f0fc9d74bb06ea174de4b53e2ef94
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Aug 6 18:44:53 2019 +0900
+
+    Add sizeof
+
+commit 0b7663481d0513067e0c0af04765b8578ae2a498
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 4 17:58:53 2020 +0900
+
+    Merge Function with Var
+    
+    No functional change
+
+commit a4d3223a7215712b86076fad8aaf179d8f768b14
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Sep 5 08:43:21 2020 +0900
+
+    Add global variables
+
+commit be38d63d1b9cd236ef3ec884eedad8112bb6e6f9
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Aug 27 21:04:17 2020 +0900
+
+    Add char type
+
+commit 4cedda2dbeca6bd81d2bd00032f7cff46e0a985e
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Oct 7 12:49:08 2020 +0900
+
+    Add string literal
+
+commit 35a0bcd366163168bf3337975130f62fc1c30235
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Oct 8 14:30:04 2020 +0900
+
+    Refactoring: Add a utility function
+
+commit ad7749f2fad87a4b1df644d4e1c345b3f87d386d
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Aug 6 22:36:19 2019 +0900
+
+    Add \a, \b, \t, \n \v, \f, \r and \e
+
+commit 699d2b7e3f4ea4ba6ec2d5080f87e243989a5835
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Mon Apr 6 08:49:00 2020 +0900
+
+    Add \<octal-sequence>
+
+commit c2cc1d3c4500caa34da5e68eb62b7474caf96fe2
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Oct 7 20:14:14 2020 +0900
+
+    Add \x<hexadecimal-sequence>
+
+commit 9dae23461eb6250865f4ee727a0e727a6a4e03ba
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Aug 7 08:05:18 2019 +0900
+
+    [GNU] Add statement expression
+    
+    This is a GNU C extension but will be useful for writing tests.
+
+commit d9ea59757e2710e34f105e98230f30f578e0e662
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Aug 7 08:30:06 2019 +0900
+
+    Read code from a file instead of argv[1]
+
+commit 7b8528f71c78a01e8ff41a76a83a320d1ef80e93
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Sep 3 22:00:02 2020 +0900
+
+    Refactor -- no functionality change
+
+commit a0388bada4016bc0c3be6154c159faf80ce18d01
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri May 8 20:44:25 2020 +0900
+
+    Add -o and --help options
+
+commit 6c0a42926a10ea5abc781c9db89b105e007512b1
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Aug 7 08:56:28 2019 +0900
+
+    Add line and block comments
+
+commit ca8b2434c97fc37c14eddcb3a4e831d030ebb041
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 4 18:00:26 2020 +0900
+
+    Handle block scope
+
+commit cd832a311e56bda981c9c957ba45f1bc1f6cc737
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 4 19:03:01 2020 +0900
+
+    Rewrite tests in shell script in C
+
+commit 6647ad9b843768968db0a331ff7077904c6f58ee
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Mon Apr 20 22:23:11 2020 +0900
+
+    Precompute line number for each token
+    
+    No functionality change
+
+commit 1c91d1943a8ee07034224dd950412c3c87ef3276
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Mon Apr 20 22:15:09 2020 +0900
+
+    Emit .file and .loc assembler directives
+    
+    With these directives, gdb can print out an error location when
+    a compiled program crashes.
+
+commit e6307ad374eeecd6474286b1b6fda5b3dda89d9a
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Mon Aug 12 10:29:17 2019 +0900
+
+    Add comma operator
+    
+    This patch allows writing a comma expression on the left-hand side
+    of an assignment expression. This is called the "generalized lvalue"
+    which is a deprecated GCC language extension. I'm implementing it
+    anyway because it's useful to implement other features.
+
+commit f814033d04c4cefdbcf8174d65011d484d69303c
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Aug 8 22:43:58 2019 +0900
+
+    Add struct
+
+commit 9443e4b8bc587b670f9b448b03842530cd355760
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 30 17:21:54 2020 +0900
+
+    Align struct members
+
+commit dfec1157b41bb86c8cb66eee0b0cbdb9dcccb6f4
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Aug 9 00:10:31 2019 +0900
+
+    Align local variables
+
+commit e1e831ea3ee46ed7d4c975822f418d60d3050e1b
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Oct 7 10:43:02 2020 +0900
+
+    Support struct tags
+
+commit f0a018a7d6f5e3847d7e66e324c5f71a55c8b5ef
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Oct 7 20:16:40 2020 +0900
+
+    Add -> operator
+
+commit 11e3841832697c8ba4a1d68f5daa05045f70a716
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Apr 2 21:54:47 2020 +0900
+
+    Add union
+
+commit bef05432c9d3289636ed1d360ca9b863a0698dc7
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Apr 18 01:05:18 2020 +0900
+
+    Add struct assignment
+
+commit 5831edaab3eb6d56126c08f01f5639222602f7e5
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Sep 6 08:09:09 2020 +0900
+
+    Change size of int from 8 to 4
+
+commit 43c2f0829f7d4ec3b96132b9964a778ff816b2eb
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Aug 27 21:51:00 2020 +0900
+
+    Add long type
+
+commit 9d48eef58b964551350fe0c1f641a57f5da40529
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Sep 6 08:10:01 2020 +0900
+
+    Add short type
+
+commit b8aa330164af48f2a141943585a6d935ac21ec2d
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Aug 10 23:05:37 2019 +0900
+
+    Add nested type declarators
+
+commit 1bdfe2b8ba791d29831d35c983094619f811f86e
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 4 11:45:29 2020 +0900
+
+    Add function declaration
+
+commit fc7e05d06c32b7e69a58e0623ffd254241fe88e7
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 11 10:18:55 2019 +0900
+
+    Add void type
+
+commit 9d43b0201897d93acf030aec5f6f0ab7bbc2ed44
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 11 14:12:01 2019 +0900
+
+    Handle complex type declarations correctly
+    
+    chibicc can now read complex type declarations such as below.
+    
+      long x;
+      long int x;
+      int long x;
+      short x;
+      short int x;
+      int short x;
+      long long x;
+      long long int x;
+
+commit ef92f6da020fe7f884166f57f563a303a418fbed
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Mon Apr 20 21:53:23 2020 +0900
+
+    Add `long long` as an alias for `long`
+
+commit a591310b834c833733fb17bcacb76ffab774c829
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 4 17:23:26 2020 +0900
+
+    Add typedef
+    
+    In the following example, `x` is defined as an alias for `int`.
+    
+      typedef x;
+    
+    Below is valid C code where the second `t` is a local variable
+    of type int having value 3.
+    
+      typedef int t;
+      t t = 3;
+
+commit 6a4cecc42866663ad395c67f5179e3d73738dd16
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 11 15:04:35 2019 +0900
+
+    Make sizeof to accept not only an expression but also a typename
+    
+    Previously, chibicc's sizeof accepted only an expression, so you
+    couldn't write something like `sizeof(int)`. Now it accepts that.
+
+commit df123e810059486ce605f4e1eedc26171e75704f
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Aug 28 15:44:40 2020 +0900
+
+    Use 32 bit registers for char, short and int
+
+commit 8a8ef177b7aa4cc037752d7a09f1e6ed6ab52beb
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 11 16:06:14 2019 +0900
+
+    Add type cast
+
+commit 47d0f322734855f9667816e1dba7155ea504abcd
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Sep 26 10:24:45 2020 +0900
+
+    Implement usual arithmetic conversion
+
+commit 371bcd652fdbb6722da313470062be779daec6f2
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Aug 21 17:16:28 2020 +0900
+
+    Report an error on undefined/undeclared functions
+
+commit 1b3f7545075c6e8fbd34295a27c4fe912fa801a6
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Apr 18 09:27:47 2020 +0900
+
+    Handle return type conversion
+
+commit 7073ef40d64c47ffdc7c900e11fe9b220fdb04a7
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Mar 22 18:43:16 2020 +0900
+
+    Handle function argument type conversion
+
+commit 6cc45643101159e4e9f0b5251f3b8535b65da664
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Aug 28 22:07:54 2020 +0900
+
+    Add _Bool type
+    
+    _Bool isn't just a 1-bit integer because when you convert a value
+    to bool, the result is 1 if the original value is non-zero. This
+    is contrary to the other small integral types, e.g. char, as you
+    can see below:
+    
+      char x  = 256; // x is 0
+      _Bool y = 256; // y is 1
+
+commit 25031d40dc8a755b8bc6c64543571b1478f8b311
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 11 16:27:43 2019 +0900
+
+    Add character literal
+
+commit 38909179803d5187a2b858e4c257316ef65f7aa6
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 11 19:59:27 2019 +0900
+
+    Add enum
+
+commit 6cb743faa16238b091d7e35f47f78bfad077e321
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 4 17:25:15 2020 +0900
+
+    Support file-scope functions
+
+commit cf3bb29df8ca8fdc377a7648d2348eb6262ec969
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 11 22:53:26 2019 +0900
+
+    Allow for-loops to define local variables
+
+commit b5d061df844ecb973fa3f6ddcf498361973ff302
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Oct 7 20:17:30 2020 +0900
+
+    Add +=, -=, *= and /=
+
+commit bc0bd86308bc1939c25b2b93e4ad098d4f15f19f
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Oct 7 20:18:26 2020 +0900
+
+    Add pre ++ and --
+
+commit 5383d6bb5dd83bb119e9753f73a23fe038749d36
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Mon Apr 13 21:44:21 2020 +0900
+
+    Add post ++ and --
+
+commit e56cbd6a657cb4d79eeb33400ffc2a128ae55e49
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Aug 13 18:39:56 2019 +0900
+
+    Add hexadecimal, octal and binary number literals
+
+commit 283b73780d1eeb435fb4425cbe2ce3a82b5768e8
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Aug 13 19:31:04 2019 +0900
+
+    Add ! operator
+
+commit 25210ccdbafb0901f5e3f347f47cf7f79d737c6c
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Aug 13 19:41:11 2019 +0900
+
+    Add ~ operator
+
+commit 268cfe94d0b6f8c98f61a02afb84242effbb5b92
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Oct 7 20:18:57 2020 +0900
+
+    Add % and %=
+
+commit 07b502d4d956da489ba4daa65afa01def2d46b9b
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Oct 7 20:19:35 2020 +0900
+
+    Add &, |, ^, &=, |= and ^=
+
+commit 3b15151a61572702b0cf53c48d1e3953093ad0a6
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Oct 7 20:22:11 2020 +0900
+
+    Add && and ||
+
+commit 0f1a59c8e9c22d962753cb409894209000c93496
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Aug 13 21:03:20 2019 +0900
+
+    Add a notion of an incomplete array type
+
+commit 4049732db70b4ea06954d47b1c5b720c3428373d
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Aug 14 11:00:05 2019 +0900
+
+    Decay an array to a pointer in the func param context
+
+commit 76ea11eec9e114b4daf8a44450492fd61e15e251
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Oct 7 11:10:28 2020 +0900
+
+    Add a notion of an incomplete struct type
+
+commit 126e3c9cca34097c63c4704be23e30b689a85984
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 4 12:27:21 2020 +0900
+
+    Add goto and labeled statement
+
+commit 69534d4fb529685d212bc92a46c95b44112b0240
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 30 16:44:12 2020 +0900
+
+    Resolve conflict between labels and typedefs
+
+commit 551f41da2b2e910f69ac240598e97845a74e6998
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Aug 15 13:48:41 2019 +0900
+
+    Add break statement
+
+commit d9d8a78f7ba0381c75684d51beafa0f7d0c784c8
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Aug 27 21:59:19 2020 +0900
+
+    Add continue statement
+
+commit e06d3c43e3767fea92380731b58a068c3e6aa170
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Aug 15 16:43:24 2019 +0900
+
+    Add switch-case
+
+commit 27380095005778ec0a326e76b7556088235c01de
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Oct 7 20:23:22 2020 +0900
+
+    Add <<, >>, <<= and >>=
+
+commit 1bb85f90440f7e42ad38a0a09aa4f109442ffccc
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Aug 17 10:27:35 2019 +0900
+
+    Add ?: operator
+
+commit 0f86cdbc2a75eba850351e6eb423fef996fe24b0
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Aug 17 10:38:20 2019 +0900
+
+    Add constant expression
+
+commit c79ba4340151563fe9f6fa864230a636152490ca
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 18 12:01:02 2019 +0900
+
+    Support local variable initializers
+
+commit a7beccd57fa04c1206c25f25034165013821176b
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 18 13:36:43 2020 +0900
+
+    Initialize excess array elements with zero
+
+commit fa46fc32ce79247938da7d5533cd8b35ee4f93de
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Apr 16 23:34:05 2020 +0900
+
+    Skip excess initializer elements
+
+commit c8eb9748e30c1a748237fa40463597cc7fffb83b
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 18 16:34:39 2019 +0900
+
+    Add string literal initializer
+
+commit e19416e974a3214187b8fc84712390ea85a35719
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 4 14:39:22 2020 +0900
+
+    Allow to omit array length if an initializer is given
+    
+    So that you can write something like `int x[] = {1, 2, 3}`
+    instead of `int x[3] = {1, 2, 3}`.
+
+commit c2f325bf0935d916478de87f12b7282131196a6e
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 18 17:56:36 2019 +0900
+
+    Handle struct initializers for local variables
+
+commit a90687a231dc590bf539074188659d66c18a8acd
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Jul 9 22:05:46 2020 +0900
+
+    Allow to initialize a struct with other struct
+
+commit 68af1cdf7ce2b5134ea2a3a6df68e22f2c7cc0ff
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Mon Jul 20 23:23:27 2020 +0900
+
+    Handle union initializers for local variables
+
+commit 609283eb254ffcc0f60bb8801bbf257acf9ed16a
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 4 17:26:34 2020 +0900
+
+    Add global initializer for scalar and string
+
+commit 513f41540efe955f4b5a47a3a7631e3319edb5b8
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 18 20:35:17 2019 +0900
+
+    Add struct initializer for global variable
+
+commit f9694057263211b946fe1dbb8560fc8a20586d0b
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Mon Jul 20 23:53:12 2020 +0900
+
+    Handle union initializers for global variable
+
+commit eefa214dd6e88baa6a30f43d164c6d3e6e7d5ff6
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Mon Aug 19 06:53:50 2019 +0900
+
+    Allow parentheses in initializers to be omitted
+
+commit 5e824d3f4e680d75adb62f57016d8eca89d4761d
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Apr 16 22:57:32 2020 +0900
+
+    Allow extraneous braces for scalar initializer
+
+commit 41155432da0ad450dbfd350e18005d262244c477
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Oct 6 13:08:41 2020 +0900
+
+    Allow extraneous comma at the end of enum or initializer list
+
+commit 0c4f15283a3937e15b97292081252f8a56917ab1
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Aug 19 17:15:03 2020 +0900
+
+    Emit uninitialized global data to .bss instead of .data
+
+commit 37fbe39ccd62ecda11f340a10286cf46a80a2439
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Sep 20 16:11:55 2020 +0900
+
+    Add flexible array member
+
+commit 762b976e5a50fe57a0be14f83abaf90f819411fe
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Sep 20 16:16:00 2020 +0900
+
+    Allow to initialize struct flexible array member
+
+commit d3e6bd98e3285c1947b37afcc9943eb979511747
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Aug 20 08:30:43 2019 +0900
+
+    Accept `void` as a parameter list
+    
+    `foo(void)` indicate that function foo does not take a parameter.
+
+commit 2d959a056a92e9680a7048328ab12020d3625f6c
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Aug 19 17:16:58 2020 +0900
+
+    Align global variables
+
+commit 859ce4047e9bb172a749d0ed1b7f0b926b6c7692
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 4 17:27:22 2020 +0900
+
+    Add extern
+
+commit 069559ef7737f4c4f99f07b365130bf46230cf92
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 4 18:08:32 2020 +0900
+
+    Handle extern declarations in a block
+
+commit 41687ed2e32351aade62b3d9ad429f113659685a
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 4 11:20:55 2020 +0900
+
+    Add _Alignof and _Alignas
+
+commit 3fd941cc7fb3c841d8a4410ea2e4d303ce59eaa8
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Sep 26 08:09:59 2020 +0900
+
+    [GNU] Allow a variable as an operand of _Alignof
+
+commit a1e09076d3d682865e3313ccd9b36d146b7665ad
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 4 14:41:55 2020 +0900
+
+    Add static local variables
+
+commit e0b5c4b1a269af20101a45cc6f5d64fd23e0a637
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Aug 24 07:45:14 2019 +0900
+
+    Add compound literals
+
+commit 89bd048a1aa84c0019800356624e23dc301572a8
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Aug 27 22:01:34 2020 +0900
+
+    Add return that doesn't take any value
+
+commit 36a99d16f6df7a136a5760a344d7ceea73c63604
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 4 11:21:12 2020 +0900
+
+    Add static global variables
+
+commit bac1a3a572d69295bd9a9c8b9d0ece3175b8a658
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Aug 24 16:09:46 2019 +0900
+
+    Add do ... while
+
+commit f1c72ab06f3a7d422d8a327371d8e1ab2c4887e8
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Sep 13 16:25:34 2020 +0900
+
+    Align stack frame to 16 byte boundaries
+
+commit e56dfc9b1d4f3de5076c84899f1f1051022e45b0
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Sep 13 16:25:46 2020 +0900
+
+    Handle a function returning bool, char or short
+    
+    x86-64 psABI says that only the least significant 8 bits are
+    significant if RAX has a return value of a function returning bool.
+    Likewise, it looks like only the least significant 1 or 2 bytes
+    are guaranteed to have a correct value for char and short return
+    values, respectively.
+
+commit 6033be213860823401646e88fda7681dad0422d2
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Oct 7 20:24:13 2020 +0900
+
+    Allow to call a variadic function
+
+commit 2258e0141d42e0aa1f03d308183634a40d5fcbac
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 25 11:48:44 2019 +0900
+
+    Add va_start to support variadic functions
+
+commit 046fd9e1c133b76cee887e61e807836771f1e59e
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Sep 26 14:29:06 2020 +0900
+
+    Check the number of function arguments
+
+commit e919d1f61334a26c89ff3dfe9a9f54774d6548ca
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Oct 6 17:08:59 2020 +0900
+
+    Add `signed` keyword
+
+commit cba56635a17b6c85df8460d853f2eef4992fae2f
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Aug 28 23:29:49 2020 +0900
+
+    Add unsigned integral types
+
+commit fb00249055ff96c91695052a8c083be6d6c2cf24
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Sep 21 16:17:40 2019 +0900
+
+    Add U, L and LL suffixes
+
+commit 068e0d50ec6cbcee0224969a1ccdcc7e8571df2f
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Mar 24 22:18:59 2020 +0900
+
+    Use long or ulong instead of int for some expressions
+
+commit b345ef8ff7ed91c6b4f4070ebe5deac451ef5f66
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 11 21:29:12 2020 +0900
+
+    When comparing two pointers, treat them as unsigned
+
+commit 25ec849b80d321cbc25708c31c3a488071d7c9bf
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Mar 26 21:20:24 2020 +0900
+
+    Handle unsigned types in the constant expression
+
+commit 7ab9353d5f70b77510b0c809880663292852a643
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Sep 3 01:22:17 2020 +0900
+
+    Ignore const, volatile, auto, register, restrict or _Noreturn.
+
+commit 85146104406a8eff3cfa9580f2f2dff532ea9d21
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Mon Aug 31 09:58:42 2020 +0900
+
+    Ignore "static" and "const" in array-dimensions
+
+commit 1b6cf19f682015fc3da16c52aa0928040946c0dd
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 4 17:28:20 2020 +0900
+
+    Allow to omit parameter name in function declaration
+
+commit 93b191b4b463830eba1a41c055843e0d1aa59ead
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Sep 27 19:43:03 2020 +0900
+
+    Add floating-point constant
+
+commit 60e682e2b494c32b0b5c09c505738199fb60a43f
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Sep 12 14:47:47 2020 +0900
+
+    Add "float" and "double" local variables and casts
+
+commit 932853fd4ad156784014769544cd9b7c3ebbf4ac
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Sep 22 18:28:37 2020 +0900
+
+    Add flonum ==, !=, < and <=
+
+commit 6e26bede4bd3658ec79d4e568a29ef2e9475a8bf
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Sep 22 18:29:17 2020 +0900
+
+    Add flonum +, -, * and /
+
+commit 8c533a13ac0c5228e5b54f7553fe999b88d71927
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Sep 13 15:58:36 2020 +0900
+
+    Handle flonum for if, while, do, !, ?:, || and &&
+
+commit cac0ab268b15fcfdb582ca3e4121f5557134b432
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Aug 27 22:46:16 2020 +0900
+
+    Allow to call a function that takes/returns flonums
+
+commit 5957b4fe598d21629f970816ab61450ceea2980e
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Aug 27 22:47:31 2020 +0900
+
+    Allow to define a function that takes/returns flonums
+
+commit bd6c06e338385606645f1d65263bcc6dafd095f6
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Apr 30 23:33:27 2020 +0900
+
+    Implement default argument promotion for float
+
+commit b1c2ef286d5a7df511dd0b753caddf41d76480d1
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri May 1 17:36:12 2020 +0900
+
+    Support variadic function with floating-point parameters
+
+commit ab90669520f14d4b025ac42bd61d214a29159154
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri May 1 19:30:17 2020 +0900
+
+    Add flonum constant expression
+
+commit c8b8a127910bc069ddfbbbbf82c70f78faebed9b
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Aug 26 14:51:06 2020 +0900
+
+    Add "long double" as an alias for "double"
+
+commit c5a616228b07f3686232928968745d8f145c0af1
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Aug 24 12:08:12 2019 +0900
+
+    Add stage2 build
+
+commit 0ed58440332b9fea827c34d201f9f75e38779c71
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Sep 3 18:50:56 2020 +0900
+
+    Add function pointer
+
+commit 3455895b7e0ff8d2860deeb72d0e1b26f46137e3
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Mon Aug 31 21:28:53 2020 +0900
+
+    Decay a function to a pointer in the func param context
+
+commit 809c0e447084e776012d8e47e664f1602c3b2658
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Sep 2 20:11:28 2020 +0900
+
+    Add usual arithmetic conversion for function pointer
+
+commit fdf60e5b26bc88dcb33209d2dfeabe8ecdcf2f76
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Aug 15 22:30:28 2020 +0900
+
+    Split cc1 from compiler driver
+
+commit e0c91ed7e0196d00dccfb89f27e5afb767691655
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Oct 8 14:34:23 2020 +0900
+
+    Run "as" command unless -S is given
+
+commit 0093ad6acac2718dccffd4e539b7da0146bf2a14
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Aug 18 09:16:57 2020 +0900
+
+    Accept multiple input files
+
+commit e57f20590d1ce64862d40ad6aefef8969922648d
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Sep 19 20:36:26 2020 +0900
+
+    Run "ld" unless -c is given
+
+commit 2a77cbf697e23806363197c7b40a5d5a6b9d8d37
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Aug 18 09:41:59 2020 +0900
+
+    Add a do-nothing preprocessor
+
+commit db25108353c5c6b275a85ccc24dfb012a0f6af61
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Mon Mar 30 09:30:06 2020 +0900
+
+    Add the null directive
+
+commit 181db7b974afc0a7fac6ec0ea2450f4778892114
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Sep 3 19:24:23 2020 +0900
+
+    Add #include "..."
+
+commit 3049c70833bd0279513a8afe7c8feb78e584ef96
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Apr 21 10:46:26 2020 +0900
+
+    Skip extra tokens after `#include "..."`
+
+commit 3d7234fb8d85303a2e631af454e3cc95e7e02201
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Aug 20 21:37:02 2020 +0900
+
+    Add -E option
+
+commit a7f8216dcd19b2780147953bd1e7a58c9df4d564
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Aug 20 19:36:36 2020 +0900
+
+    Add #if and #endif
+
+commit 8d11fb7b0624d1b9302b8668e2ec500870525ac5
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Mon Mar 30 09:54:47 2020 +0900
+
+    Skip nested #if in a skipped #if-clause
+
+commit cb24e04804ae134e41399b453e1d99bf83b3fdeb
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Mon Mar 30 09:57:07 2020 +0900
+
+    Add #else
+
+commit 482a4bbb498a37a9c69126aea51a46c8a6181674
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Mar 29 08:51:06 2020 +0900
+
+    Add #elif
+
+commit 406d071abcb7c20efc2163b4e38c9513332cf701
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Mar 29 13:29:48 2020 +0900
+
+    Add objlike #define
+
+commit b4ef3169332d4c9a2db3b38898190a80d7c9d142
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Mar 29 18:23:33 2020 +0900
+
+    Add #undef
+
+commit 70442c316c2acaa8162b335afb9c6c6138936520
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Aug 20 19:36:49 2020 +0900
+
+    Expand macros in the #if and #elif argument context
+
+commit db5b29109c47a73aecd1fc4c7574cd3f6708da60
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Mar 29 15:47:50 2020 +0900
+
+    Do not expand a token more than once for the same objlike macro
+
+commit e141a91879cfe9b8ac652b84c5576ffe3e67052d
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Mar 29 17:18:31 2020 +0900
+
+    Add #ifdef and #ifndef
+
+commit 2b0baf2da51c78d807b688768d11bec6cfdb65a7
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Aug 18 10:45:03 2020 +0900
+
+    Add zero-arity funclike #define
+
+commit 952355f2524009d4c7dbee5d0a0dbe8b49b5e601
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Mon Mar 30 10:37:44 2020 +0900
+
+    Add multi-arity funclike #define
+
+commit dfff759457d421a2a1a84d80678cac810b04712c
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Mon Mar 30 10:39:35 2020 +0900
+
+    Allow empty macro arguments
+
+commit 09c5b3362d0febb6671d80ee26bd831a276fea91
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Mar 29 22:18:02 2020 +0900
+
+    Allow parenthesized expressions as macro arguments
+
+commit e3ce00747f2106356ee9c8252fc2fd0ab0cd4389
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Mon Aug 31 16:48:29 2020 +0900
+
+    Do not expand a token more than once for the same funclike macro
+
+commit 995aa7412d49bfe41b3e27fd1e7bbfeaf6437fd0
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 30 01:04:23 2020 +0900
+
+    Add macro stringizing operator (#)
+
+commit c5e6f6f7fc1c269a473dad55d0d70c1c40535e83
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 30 01:05:28 2020 +0900
+
+    Add macro token-pasting operator (##)
+
+commit 76c681c2a0d568c1727fe27bad6b70aff84e3025
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 30 18:54:12 2020 +0900
+
+    Use chibicc's preprocessor for all tests
+
+commit d6f33a8d1dad08668dc4e3f52887560bd4dc75e0
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Mon Aug 31 16:50:58 2020 +0900
+
+    Add defined() macro operator
+
+commit c7dcbbf6a3110f08cd828bb13d23d0e1e0552c90
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Mar 31 22:16:56 2020 +0900
+
+    Replace remaining identifiers with 0 in macro constexpr
+
+commit c0b5931b519f2ceb71255d0377a3e84fd8f1f509
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 30 02:33:01 2020 +0900
+
+    Preserve newline and space during macro expansion
+
+commit 7c5d75de3d0fc830917217c12cc922f99debd318
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Mar 31 22:27:38 2020 +0900
+
+    Support line continuation
+
+commit 88a552998e6be5fe83a481490ea2d8788fb2035a
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 30 18:57:20 2020 +0900
+
+    Add #include <...>
+
+commit e54105d08a86bbd534af963552305803df1c7441
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 25 23:18:32 2020 +0900
+
+    Add -I<dir> option
+
+commit ca0dee155e83e9319d66d8cce2a7e80cb12e4f85
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Sep 19 20:42:21 2020 +0900
+
+    Add default include paths
+
+commit d5ca66f9c321d23cdf04dd03889101729bcc822a
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Apr 1 20:46:47 2020 +0900
+
+    Add #error
+
+commit 4559ea7e6e83c5a586f6aa69306c7fb5c7e78bf5
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Apr 1 23:54:33 2020 +0900
+
+    Add predefine macros such as __STDC__
+
+commit ad60fe195916e8276e9924e25c4036eac3e195b9
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 30 18:57:54 2020 +0900
+
+    Add __FILE__ and __LINE__
+
+commit e5ab35a5701b21dd12463ce739064ab6a3184350
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Apr 2 06:55:07 2020 +0900
+
+    Add __VA_ARGS__
+
+commit 10102b33409d921298952973b7f10f70d73ced09
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 4 11:55:28 2020 +0900
+
+    Add __func__
+
+commit 5eec02c1dc3cfa2315917d91c26ddad585e51cc9
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 4 11:56:28 2020 +0900
+
+    [GNU] Add __FUNCTION__
+
+commit 2d737a1d7f23131130cd35fa812d0132e9b48282
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Apr 26 10:11:02 2020 +0900
+
+    Concatenate adjacent string literals
+
+commit 61529cc11bbcbe3275c459deaf43a5196847d68e
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Mon Jul 20 19:24:56 2020 +0900
+
+    Recognize wide character literal
+    
+    For now, L'' is equivalent to ''.
+
+commit 41162628814b469adddb8f351b378b11f698ee6d
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 30 18:58:41 2020 +0900
+
+    Add stdarg.h, stdbool.h, stddef.h, stdalign.h and float.h
+
+commit 3830b2583e36c20d159a8b63c16d5d156c448bda
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 16 14:27:35 2020 +0900
+
+    Add va_arg()
+
+commit 4357e08690e1b9cacf8839c2fcda8f2ee41e9b80
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 30 18:49:29 2020 +0900
+
+    Self-host: including preprocessor, chibicc can compile itself
+
+commit 6b317dcbdb18dd2402c5b41cc92f2539dbd6c403
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Aug 27 22:59:31 2020 +0900
+
+    Support passed-on-stack arguments
+
+commit f76716ce2e691b3967ea890873d076fd1c7683d5
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Jul 30 12:48:20 2020 +0900
+
+    Support passed-on-stack parameters
+
+commit b0e187b42c7b30faceaf40fc5f056be4657c5837
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Aug 27 23:14:58 2020 +0900
+
+    Allow struct parameter
+
+commit 5195030e62d295d9d199449f18471fe2aa3c428b
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Jul 31 12:12:43 2020 +0900
+
+    Allow struct argument
+
+commit 7f42093f22e07e7a23eabe7ccf7d4c686dae0dbc
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Aug 27 23:16:53 2020 +0900
+
+    Allow to call a fucntion returning a struct
+
+commit 7dd60c1bd689f88396b81a1b79fa140965dc8d27
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 4 11:57:15 2020 +0900
+
+    Allow to define a function returning a struct
+
+commit b36506cce7596515a1fc188db32eed6e261672c1
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 4 18:27:31 2020 +0900
+
+    Allow variadic function to take more than 6 parameters
+
+commit e64975f2154c01f868fab60516d50b2bdf98adb3
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 4 18:37:15 2020 +0900
+
+    Add va_copy()
+
+commit 421a1a31bc3c324b6304e5dc95d35deaafa356e5
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Apr 23 17:18:49 2020 +0900
+
+    Dereferencing a function shouldn't do anything
+    
+    This is an oddity in the C spec, but you can apply the unary `*`
+    operator to a function as many times as you want. `*x` and `x`
+    means exactly the same, given that `x` is a function.
+
+commit 7b5c86caa4e351711e926ccce93a8df6f8326122
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Sep 27 19:45:12 2020 +0900
+
+    Tokenize numeric tokens as pp-numbers
+
+commit 6a66595b56c7a0a4c7323b5d14fdbdac42b995f8
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Aug 28 01:34:10 2020 +0900
+
+    Add -D option
+
+commit 0fe8a7b85c03fcfdcdd75a5738237fa8850914c3
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Aug 18 11:09:32 2020 +0900
+
+    Add -U option
+
+commit 665b2b11d660f87c99e7ede6b6fab39674d5c4fd
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Aug 27 23:36:12 2020 +0900
+
+    Add bitfield
+
+commit a077f81650f1bbc2802327aef094d51a9a3c1252
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Sep 6 21:06:15 2020 +0900
+
+    Support global struct bitfield initializer
+
+commit d42d5b45719c5f7c419999770c0cb0eb0017ad3a
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Aug 27 23:50:05 2020 +0900
+
+    Handle op=-style assignments to bitfields
+
+commit 5f8e7580bb93b525122c709e3bfb61fa17e433ee
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 23 11:47:16 2020 +0900
+
+    Handle zero-width bitfield member
+
+commit 66a1fe24024475ea474284a6cc4f23bd447ba65c
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 23 12:38:17 2020 +0900
+
+    Do not allow to obtain an address of a bitfield
+
+commit c5dbab84e6b477b0712602cb236fd34881ede792
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Aug 18 11:45:59 2020 +0900
+
+    Write to an in-memory buffer before writing to an actual output file
+    
+    We don't want to leave a partial assembly output if the compiler
+    fails during compilation.
+    
+    Technically speaking, there's still a risk of leaving a partially-
+    written output file if the compiler dies during file copy. To fix
+    that, we have to write to a temporary file in the same filesystem as
+    the final output file and rename the temporary file to atomically
+    replace the output file. We don't do that in this patch for the sake
+    of succinctness, though.
+
+commit 1ac475c4278d32d644d8210f12f2e7f066e30c33
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Aug 18 11:46:32 2020 +0900
+
+    Ignore -O, -W and -g and other flags
+
+commit 8809f6c86814a8efefb47ce00fe1b9f35ab6fd4f
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun May 10 14:47:10 2020 +0900
+
+    Turn on -Wall compiler flag and fix compiler warnings
+
+commit a03f27190ff9c19474bb9cc2b5bd933288ad79af
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun May 10 20:15:32 2020 +0900
+
+    Make an array of at least 16 bytes long to have alignment of at least 16 bytes
+    
+    Quote from AMD64 System V ABI: "An array uses the same alignment as
+    its elements, except that a local or global array variable of length
+    at least 16 bytes or a C99 variable-length array variable always has
+    alignment of at least 16 bytes."
+
+commit ae60eafa423e9aba65241926346b7c164bd8a61f
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Mon May 11 20:21:17 2020 +0900
+
+    Make "main" to implicitly return 0
+
+commit d7cf3ce16902d1cd1e6f6054f8326238db44b9b6
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 23 11:48:16 2020 +0900
+
+    Add anonymous struct and union
+
+commit 50faed96e7b72592ef7dedc227ceef6b9f1e4391
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun May 17 13:34:36 2020 +0900
+
+    Add __DATE__ and __TIME__ macros
+
+commit 68a4f9406213fee0f9067be58404ab9240ab95de
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Jun 9 01:40:02 2020 +0900
+
+    [GNU] Add __COUNTER__ macro
+
+commit 69e62065c3342ad1ae3e23590a6e0a83152c8cfd
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Jun 10 01:30:16 2020 +0900
+
+    Canonicalize newline character
+
+commit 12dbc90fc7225363c55afb4ce82e85c48ec75751
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Aug 18 11:56:24 2020 +0900
+
+    Add \u and \U escape sequences
+
+commit 68fcfb28e5c1a713bb1dfec516d2467e29168192
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed May 6 18:47:42 2020 +0900
+
+    Accept multibyte character as wide character literal
+    
+    On most Unix-like systems, wide character literal is 32-bit long
+    and encodes a Unicode code point. On Windows, that is 16-bit
+    long and encodes a UTF-16 code unit. Clearly, there's a portability
+    issue here. Personally I've never used wide characters in my code
+    as I didn't find it useful.
+    
+    Being said that, some header files contain wide character literal,
+    so we need to support that so that chibicc can include such files.
+    
+    We assume that source files are always encoded in UTF-8.
+
+commit cc0818feab6f37857400059df542d1b324051d83
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Sep 27 19:46:47 2020 +0900
+
+    Add UTF-16 character literal
+
+commit dac24e57df615ed0ab0a7a6ae8f7d3e2fed2a5d5
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Mon Jul 6 18:59:25 2020 +0900
+
+    Add UTF-32 character literal
+
+commit 8824778a7e3eeeff9ebbb93b3e7aba1113ed2b8b
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Sep 27 19:47:36 2020 +0900
+
+    Add UTF-8 string literal
+
+commit fbe75f9e08c1b21b3e0a917f9326536a6ecc244c
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Sep 26 19:56:56 2020 +0900
+
+    Add UTF-16 string literal
+
+commit 29a79094a59de1fbe0960211f499412de8b8a8e8
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Sep 26 19:57:36 2020 +0900
+
+    Add UTF-32 string literal
+
+commit 6c904b66ecabff6bdb070c101789714d476383f6
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Jul 5 20:49:58 2020 +0900
+
+    Add wide string literal
+
+commit f80c7ac8abd2da751dbce4e2efa28fa2163163f9
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Jul 7 14:04:36 2020 +0900
+
+    Add UTF-16 string literal initializer
+
+commit 477a7c054e38a9de3bce36a62eb44f1839ccb12c
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Jul 7 14:04:36 2020 +0900
+
+    Add UTF-32 string literal initializer
+
+commit 3d417da476766d719ea6a127f443587970c73337
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Jul 8 13:01:34 2020 +0900
+
+    Define __STDC_UTF_{16,32}__ macros
+    
+    These predefined macros indicates that our u and U chars/strings
+    are UTF-16 and UTF-32-encoded, respectively.
+
+commit 0037a0b5a5ab31abb938ee0fd9eeab09e1087bfe
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Mon May 4 16:53:48 2020 +0900
+
+    Allow multibyte UTF-8 character in identifier
+
+commit f4e3cbf57326edb08751a5df6c9d85efe2e8c6db
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Jul 19 20:28:46 2020 +0900
+
+    [GNU] Accept $ as an identifier character
+
+commit efb583288e548e93810b930fe6b7364a19e18434
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Oct 4 14:58:00 2020 +0900
+
+    Allow to concatenate regular string literals with L/u/U string literals
+
+commit a87ff7a7841dba4d98edebf73836c4c986e64264
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Oct 15 14:21:45 2020 +0900
+
+    Skip UTF-8 BOM markers
+
+commit f7468b1ab73670ef612c9322ab9f9eda961cc48b
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 18 14:12:32 2020 +0900
+
+    Add array designated initializer
+
+commit 083e7670b3dcd8986bd060fda17859dece7aa215
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Sep 20 16:07:43 2020 +0900
+
+    Allow array designators to initialize incomplete arrays
+
+commit 96ebbe902a8659b325d34f02e81cebdfc06e79a2
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Jul 24 01:51:45 2020 +0900
+
+    [GNU] Allow to omit "=" in designated initializers
+
+commit 11b0dc612563df33007937af3d1b70c9bbb595b6
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Oct 6 13:09:15 2020 +0900
+
+    Add struct designated initializer
+
+commit 7db650ac0d98629867ae5e7858bd9ce912f68949
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Aug 15 17:01:54 2020 +0900
+
+    Add union designated initializer
+
+commit 405315b80fbbd33c35d000b6e27e5b3ef6bd17f5
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Jul 19 17:19:50 2020 +0900
+
+    Handle struct designator for anonymous struct member
+
+commit 2319938e3362bce1695e055327676c925635914e
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Mon Jul 20 14:00:00 2020 +0900
+
+    Improve error message for multibyte characters
+
+commit b96c22dfabb57010f44133baf7303a146178be11
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Jul 22 19:45:03 2020 +0900
+
+    Add #line
+
+commit 68dffc3fb7a254d64d5a0cd89c795d7c7cc39423
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Jul 22 22:16:01 2020 +0900
+
+    [GNU] Add line marker directive
+
+commit ff1f2d1ea4d51d3bf9bfd19d515923d43e97abe5
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Jul 22 21:48:49 2020 +0900
+
+    [GNU] Add __TIMESTAMP__ macro
+
+commit 6c0ccaae201105059b0229f0ab822835e9a11647
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Aug 20 22:24:20 2020 +0900
+
+    [GNU] Add __BASE_FILE__ macro
+
+commit b2746d42b94818cbc0d62abdd6abbe5a16ec0bf3
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Jul 23 13:25:15 2020 +0900
+
+    Add __VA_OPT__
+
+commit 15c76f93149dd483ee67461baa9d460a59f87319
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Jul 23 14:28:33 2020 +0900
+
+    [GNU] Handle ,##__VA_ARG__
+
+commit 9b4e257538479fc469602e8a10881e7e84b0f4ae
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Sep 19 22:09:33 2020 +0900
+
+    Ignore #pragma
+
+commit ec78c2ee48c466d83c01b44569d0448ea2a2acfb
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 30 01:28:04 2020 +0900
+
+    [GNU] Support GCC-style variadic macro
+
+commit d13b10a703b610bfdc8f6ed0a7c5de3b76938846
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Jul 23 19:29:25 2020 +0900
+
+    Add typeof
+
+commit 86cf40ffef3ea2a951d5500b6a6ebd361a00039b
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Sep 6 21:06:56 2020 +0900
+
+    [GNU] Add __builtin_types_compatible_p
+
+commit ec844b9e7d14c0da97c6031e3ff2eb26cff224d6
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Jul 24 16:18:03 2020 +0900
+
+    Add _Generic
+
+commit 7f2f303926809a1253cad071b7b95d8af8762063
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Jul 24 21:43:48 2020 +0900
+
+    [GNU] Allow sizeof(<function type>)
+
+commit 91b284ca5d4a68c82b4616a38c97d49e9cb4b64f
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Sep 13 15:58:54 2020 +0900
+
+    [GNU] Add ?: operator with omitted operand
+
+commit e13b1d65de409f6d01e092c740525869e2d66fb5
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Aug 27 23:50:52 2020 +0900
+
+    Add basic "asm" statement
+
+commit 96206537e4ea111ea593071aadc63ebe626388a8
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 4 12:54:07 2020 +0900
+
+    Handle inline functions as static functions
+
+commit c147cdeca5dbbce2d0f6dbf1af55fedab0eeaf49
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Sep 13 10:49:25 2020 +0900
+
+    Do not emit static inline functions if referenced by no one
+
+commit 6c2e7f929ba0694ebb427d8df660bec3a81ac59c
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 2 10:04:55 2020 +0900
+
+    Use __attribute__((format(print, ...))) to find programming errors
+
+commit 24a1bdb2c4f4736164b9e5377b4da1437e1c860e
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Sep 19 20:50:36 2020 +0900
+
+    Add -idirafter option
+
+commit 18e0053b77aca231948a5900dd0e3d36525b95a4
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Aug 15 20:06:23 2020 +0900
+
+    Add offsetof
+
+commit 6d8aeb604220e15ffed1a52055890f05788697dd
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 4 17:29:15 2020 +0900
+
+    Add tentative definition
+
+commit 1886c09e072290f48e3af7e0b41d1c98f18e2610
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Aug 19 17:24:16 2020 +0900
+
+    Add -fcommon and -fno-common flags
+
+commit 1284e90c7ee3589e8935066b84dc63580a6dc496
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Mon Sep 7 10:02:10 2020 +0900
+
+    Add thread-local variable
+
+commit b19ec6f38cff7fe33bb85176a21f1ccf6d54c82d
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Sep 19 20:53:13 2020 +0900
+
+    Add -include option
+
+commit 86003b68889db749425b1810f6c5bc2d366deb73
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Sep 19 21:43:35 2020 +0900
+
+    Add -x option
+
+commit ac2b8efbd21775562b6d28810b53e312afe0c805
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Mon Sep 28 22:59:52 2020 +0900
+
+    Make -E to imply -xc
+
+commit f1656f1a66b84c4ac2741bd633f0faa76b9be3da
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 4 11:59:38 2020 +0900
+
+    Add alloca()
+
+commit 1481d1bdceb94b439f614a505a52c3ff082b26be
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 4 14:44:12 2020 +0900
+
+    Add sizeof() for VLA
+
+commit d401bafc46dac09bff18233ce8311c26f174f545
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Sep 3 22:27:13 2020 +0900
+
+    Add pointer arithmetic for VLA
+
+commit e0485082259b611a91753dc845d6a7b8a16a8a4c
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Aug 25 09:34:41 2020 +0900
+
+    Support sizeof(typename) where typename is a VLA
+
+commit bb8e09c20c276737783cf941b53190e1199c178b
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Aug 25 13:44:53 2020 +0900
+
+    Do not define __STDC_NO_VLA__
+
+commit c6ae4216e989f493c87aa94b5f7290b1172f7e5a
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Aug 25 11:02:38 2020 +0900
+
+    Add -l option
+
+commit 442ea3c7970d2557a1a684e6f67c2b3b31f58d67
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Sep 19 21:00:04 2020 +0900
+
+    Add -s option
+
+commit 5a9622e629cc002abc309eb460c3caa5e571faad
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Sep 10 15:51:47 2020 +0900
+
+    Emit size and type for symbols
+
+commit 470645d25b5096a9bcced5b4b7f379118142d0ad
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Aug 25 14:47:43 2020 +0900
+
+    Recognize .a and .so files
+
+commit d3859479fb3ea87d7bf9adb532f5cc1067bb08d9
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Aug 29 10:37:53 2020 +0900
+
+    Add long double
+
+commit 0b9218cb8f9df71229bb5ea10c82089587c7c4a6
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Aug 30 12:51:05 2020 +0900
+
+    [GNU] Support case ranges
+
+commit f37ec40fa8b7fffd90b9376002da517199670b3a
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Sep 20 15:39:38 2020 +0900
+
+    [GNU] Support array range designator
+
+commit f92240d81878a1f2499a62dd7c79fa0b23406379
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 4 12:26:27 2020 +0900
+
+    [GNU] Support labels-as-values
+
+commit 96524424cd357e4695ff9f36f92705fe334fb0dd
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Sep 20 13:23:53 2020 +0900
+
+    [GNU] Treat labels-as-values as compile-time constant
+
+commit 6b8df9c3fed4802715f301eb825bc8e0c40e3a5e
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Sep 2 01:30:29 2020 +0900
+
+    Add string hashmap
+
+commit c688a4973d8f33fd6a0d2220a7bf259cd9522608
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Sep 2 01:32:00 2020 +0900
+
+    Use hashmap for macro name lookup
+
+commit 55a40b2d3d6101bfe4b0f985e96e5e0f8c027a78
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Oct 7 11:13:22 2020 +0900
+
+    Use hashmap for block-scope lookup
+
+commit 0fb4106f4cc1e24288a0192ad4de6d93f1cfe27d
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Sep 3 22:55:50 2020 +0900
+
+    Use hashmap for keyword lookup
+
+commit a3618bb5180a191be24887efec4081a4e3fd1150
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Sep 3 19:34:07 2020 +0900
+
+    Add -M option
+
+commit a3523f26012ac1a469d4313d0ecabd60d10643e7
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Aug 18 12:27:27 2020 +0900
+
+    Add -MF option
+
+commit 8db128c8fec54cd031f8b02237136f1b0d3ca460
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Aug 18 12:30:30 2020 +0900
+
+    Add -MP option
+
+commit f33e7110bc1f9ebf531c8841afca9cafa6e0318e
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Aug 18 12:38:21 2020 +0900
+
+    Add -MT option
+
+commit 004cbb0eb030238b9d58563de4a7c12a3f7b810c
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Aug 18 12:42:46 2020 +0900
+
+    Add -MD option
+
+commit 205bb4dbea83085821220b9a757e3b72dac60a2b
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Thu Sep 3 00:32:47 2020 +0900
+
+    Add -MQ option
+
+commit 7f2a0dc2ac67cc62a046c6d3fa175886f3d70d7f
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Sep 19 21:03:19 2020 +0900
+
+    Add -MMD option
+
+commit fb50b62ed619e8354f2b50057ddd720af92ec82d
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Sep 8 18:50:40 2020 +0900
+
+    Add -fpic and -fPIC options
+
+commit 240265d27138a20952a7dbdb8f40958b74904776
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Sep 19 21:04:38 2020 +0900
+
+    Cache file search results
+
+commit fcf7403a02e9ef993a2f112c876d460029b37a88
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Mon Oct 5 14:27:04 2020 +0900
+
+    Add include guard optimization
+
+commit fdf57bfd9a488177654f3b6d17f2c97d752b920e
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Mon Oct 5 14:27:19 2020 +0900
+
+    [GNU] Add "#pragma once"
+
+commit 866cb6411c6b41fe577340df4971c2e6193925fb
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 25 21:39:08 2020 +0900
+
+    [GNU] Add #include_next
+
+commit 3c3ab578c87e7c66021bd535f1fa8a8ba0e865fe
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Oct 9 15:06:35 2020 +0900
+
+    Add -static option
+
+commit b2db713042f3be7ff2898288e561f6d430212ddb
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Oct 9 15:09:17 2020 +0900
+
+    Add -shared option
+
+commit cf2ee2cb234979d5a61b2bc52fcc0ab545459de7
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Sep 13 15:34:58 2020 +0900
+
+    Add -L option
+
+commit f955405aa53e7110a783cf1ea1ce5d9d0cf88a29
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sat Sep 19 21:09:17 2020 +0900
+
+    Add -Wl, option
+
+commit 9bc5c64b83bd20d58b557a188dd0003c21a9f6b0
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Sep 20 13:29:23 2020 +0900
+
+    Add -Xlinker option
+
+commit 296ce42c63a1b729d854a14e772095a059550f59
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Sep 13 21:18:44 2020 +0900
+
+    Add scripts to test third-party apps
+
+commit aa9a9d3d3a7a768c2dc8daf570580d3a1425d5bd
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Sep 15 11:30:56 2020 +0900
+
+    Add atomic_compare_exchange
+
+commit 1bb084e23ca1f06b9a9184679b107e7da34b3760
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Sep 15 11:30:56 2020 +0900
+
+    Add atomic_exchange
+
+commit 7a9996adc84d1833f94891728ca2c0bbd870d9ee
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Tue Sep 15 11:30:56 2020 +0900
+
+    Add _Atomic and atomic ++, -- and op= operators
+
+commit 8e6af0d97b4df819a04006e02f4fc532a0f589cd
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Sep 16 15:59:56 2020 +0900
+
+    Complete stdatomic.h
+
+commit 23be50744281b2a25682dcb909d7513cffd5abf9
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Sun Sep 20 12:14:19 2020 +0900
+
+    Add test/thirdparty/cpython.sh
+
+commit 364fab65de207b57c65b25192bea13ed435431e4
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Sep 23 20:57:17 2020 +0900
+
+    redefinition
+
+commit 86e9f21b2240dac4ca616049806c939316dbb74f
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Oct 7 11:14:15 2020 +0900
+
+    Add __attribute__((packed))
+
+commit e054dd7cd367f603c3fd5496fc427b2c2cc87d36
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Fri Sep 25 14:48:38 2020 +0900
+
+    Add __attribute__((aligned(N)) for struct declaration
+
+commit bf436ccf0b5daf191560b4ac699857e5c2f59327
+Author: Rui Ueyama <ruiu@cs.stanford.edu>
+Date:   Wed Sep 30 17:47:33 2020 +0900
+
+    Update README
